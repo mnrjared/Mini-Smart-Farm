@@ -1,0 +1,200 @@
+.main-content{
+   max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  } */
+
+  .formError{
+    color: red;
+    font-size: 0.9em;
+    padding: 0% 0% 1% 0%;
+  }
+
+  .errorBorder{
+    border: 1px solid red !important;
+  }
+
+ .chicken-dashboard h1{
+    text-align: center;
+}
+
+.chicken-dashboard #coop-summary{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+    height: auto;
+} 
+
+.chicken-dashboard .summary{
+    background-color: rgb(50,199,37);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    padding: 0% 5%;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.chicken-dashboard .summary-text{
+    margin-top: 0px;
+    font-size: 1.3rem;
+    height: 50%;
+}
+
+.chicken-dashboard .summary-number{
+    position: relative;
+    font-size: 1.4rem;
+    padding: 10% 0%;
+} 
+
+#Chicken-Video-Container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#Chicken-Video{
+    width: 60%;
+    border-radius: 20px;
+    margin: 0% auto;
+}
+
+#Chicken-Video-Button{
+    position: relative;
+    width: 100%;
+    background-color: rgb(50,199,37);
+    margin: 2% auto;
+    height: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.chicken-dashboard .chart-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    width: 95%;
+    margin: 2% auto;
+    border-radius: 20px;
+    box-shadow: -4px 0px 0px rgba(0, 87, 6, 0.94);
+    padding-bottom: 20px;
+
+}
+
+.chicken-dashboard .graph-title{
+    padding: 1%;
+    margin-left: 4%;
+}
+
+.chicken-dashboard .graph-hr{
+    width: 90%;
+    border: 1px solid rgb(2, 84, 45);
+    margin: 0 auto;
+} 
+
+.chicken-dashboard #egg-chart,
+.chicken-dashboard #predator-chart,
+.chicken-dashboard #movement-chart{
+    width: 100%;
+    
+} 
+
+
+.chicken-dashboard #export-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+
+.chicken-dashboard .data {
+    padding: 10px 18px;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: white;
+}
+
+
+.chicken-dashboard .data.export {
+    background-color: #4CAF50;
+} 
+
+.chicken-dashboard .data.export:hover {
+    background-color: #45a049;
+}
+
+.chicken-dashboard .data.delete {
+    background-color: #e53935;
+} 
+
+.chicken-dashboard .data.delete:hover {
+    background-color: #c62828;
+}
+
+.chicken-dashboard .data.cancel {
+    background-color: #4CAF50;
+} 
+
+.chicken-dashboard .data.cancel:hover {
+    background-color: #43a047;
+} 
+
+.chicken-dashboard .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chicken-dashboard .modal {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 320px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.chicken-dashboard .modal h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.chicken-dashboard .modal p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+.chicken-dashboard .modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#chart-container {
+    margin-bottom: 50px;
+}
+
+#export {
+    margin-top: 50px;
+}

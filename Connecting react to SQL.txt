@@ -1,0 +1,61 @@
+for me, first run:
+cd "Backend - Database connection"   --- this is to go to backend where I will try to make things work and connect to MySQL
+
+run the following (unless its already done and the Package and Package-lock files are already made
+1.  npm init -y
+2.  npm install express cors nodemon
+
+	(express is the node.js framework required to connect to the MySQL)
+	(cors is required to access the API in the react tab)
+	(nodemon refreashes the server when changes are made)
+
+3. npm install express cors mysql2 dotenv 
+
+	(Due to using typescript, mysql2 and dotenv are extra runtime dependancies and libraries to make typescript work)
+
+4. npm install --save-dev typescript ts-node nodemon @types/express @types/cors @types/node
+
+	(this creates Type definitions to make Typescript work with express, cors, and node.js)
+
+
+
+.env --- holds the data for the database that will be connected to as follows:
+
+DB_HOST=localhost 	(who hosts the database)
+DB_USER=root		(username 
+DB_PASSWORD=		(password)
+DB_NAME=		(name of the database)
+DB_port= 		(port of XAMPP to be used)
+
+
+
+folders/files added
+folders: backend + node_modules
+	backed - where the main connections will be made
+	node_modules - modules downloaded
+	
+files:	.env - sets the host data such as the type, user name, password, etc.
+	package-lock.Json - auto-generated
+	package.json - auto-generated.  added ""start": "nodemon Server.js"" in line 8 to start nodemon on startup
+	global.d.ts - declares that CSS is being imported into the TypeScript
+
+
+
+
+must run 2 things in separate terminals.
+1. in the PSU Project website (front end), run ->  npm run dev
+2 in the Backend, run ->  npx ts-node Server.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+

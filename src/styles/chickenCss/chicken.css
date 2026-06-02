@@ -1,0 +1,124 @@
+.main-content{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(183, 183, 183);
+}
+
+.formError{
+    color: red;
+    font-size: 0.9em;
+    padding: 0% 0% 1% 0%;
+}
+
+.errorBorder{
+    border: 1px solid red !important;
+}
+.chickenMain h1{
+    text-align: center;
+}
+.chickenMain form{
+    padding: 1%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.chickenMain form, .chickenMain h2{
+    width: 90%;
+    margin: auto;
+}
+
+#add-chicken{
+    border-radius: 20px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+#eggs-layed{
+    margin-bottom: 1%;
+}
+.formIcons{
+    height: 15px;
+    position: absolute;
+    left: 75%;
+    margin: -1.2% 0 0 0;
+}
+.formTitlesBefore{
+    background-color: rgb(217, 217, 217,0.38);
+    border-radius: 15px;
+    box-shadow: -4px 0px 0px rgba(0, 87, 6, 0.94);
+    padding: 0.5% 0% 0.5% 2%;
+    margin-top: 1%;
+}
+.formTitlesAfter{
+    background-color: rgb(217, 217, 217,0.38);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: -4px 0px 0px rgba(0, 87, 6, 0.94);
+    padding: 0.5% 0% 0% 2%;
+    margin-top: 1%;
+}
+#add-chicken-form, #log-eggs-form{
+    background-color: rgb(217, 217, 217,0.38);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 0px 0px rgba(0, 87, 6, 0.94);
+}
+#add-chicken-form label, #log-eggs-form label{
+    margin-bottom: 3px;
+}
+#add-chicken-form input, #add-chicken-form select, #add-chicken-form textarea, #add-chicken-form button,
+#log-eggs-form input, #log-eggs-form select, #log-eggs-form textarea, #log-eggs-form button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+.chickenButton{
+    background-color: rgb(0, 87, 6, 0.94) !important;
+    color: white;
+    margin-top: 0.5%;
+    padding: 1%;
+    font-size: medium;
+}
+#chicken-photo{
+    border: none;
+}
+#chicken-photo::file-selector-button{
+    background-color: rgb(0, 87, 6, 0.94);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#log-eggs-form{
+    display: flex;
+    flex-direction: column;
+}
+.chickenHr{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#no-chickens{
+    text-align: center;
+    margin-top: 20px;
+    font-size:larger;
+    color: gray;
+}
+
+.chickenTextArea
+{
+    min-height: 50px;
+    height: fit-content;
+    max-height: 200px;
+    resize: vertical;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    min-width: none;
+    overflow: auto;
+}

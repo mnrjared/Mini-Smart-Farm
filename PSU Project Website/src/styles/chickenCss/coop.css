@@ -1,0 +1,318 @@
+.main-content{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(183, 183, 183);
+  }
+
+  .formError{
+    color: red;
+    font-size: 0.9em;
+    padding: 0% 0% 1% 0%;
+  }
+
+  .errorBorder{
+    border: 1px solid red !important;
+  }
+.coop-page .coop-hr{
+    margin: 1% 0px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    color: rgb(31,208,99);
+    width: 100%;
+}
+.coop-page .coop-text{
+    color: rgb(31,208,99);
+    font-size: large;
+    align-self: center;
+    align-content: center;
+    margin: 3% auto;
+    padding: 0 4%;
+}
+.coop-page #waste-hr,
+.coop-page #steps-hr{
+    width: 100%;
+}
+
+.coop-page #top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+.coop-page #top section{
+    padding: 2% 2%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.coop-page #top section button{
+    align-self: center;
+}
+.coop-page #top section form input,
+.coop-page #top section form button,
+.coop-page #top section form label{
+    align-self: center;
+}
+
+
+.coop-page #reminder{
+    background-color: rgb(255,249,196);
+    width: 45%;
+}
+.coop-page #reminder-form{
+    display:flex;
+    flex-direction: column;
+}
+.coop-page #reminder input,
+.coop-page #door input{
+    width: 30%
+}
+.coop-page #change,
+.coop-page #control-door,
+.coop-page #reminder-button{
+    padding: 2% 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:fit-content;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(31,208,99);
+    color: white;
+}
+.coop-page #collection{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 2% 2%;
+    margin: 1% 0%;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.coop-page #door{
+    background-color: rgb(224,247,244);
+    width: 45%;
+}
+.coop-page #door-status{
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5% 1%;
+    margin: 1% 0%;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}
+.coop-page .closedDoor{
+    background-color: rgba(255, 0, 0, 60%);
+}
+.coop-page .openDoor{
+    background-color: rgba(0, 255, 0, 60%);
+}
+
+.coop-page #log-poop div h2,
+.coop-page #steps-section div h2,
+.coop-page .coop-form-section > div > h2{
+    margin: auto 0px;
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.coop-page #log-poop div h2 img,
+.coop-page #steps-section div h2 img,
+.coop-page .coop-form-section > div > h2 img{
+    position: static;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.coop-page #poop-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+}
+.coop-page #log-poop{
+    width: 93%;
+    margin: 15px auto;
+    padding: 1% 2%;
+    background-color: rgb(255,248,225);
+    border-radius: 20px;
+}
+.coop-page #poop-form input,
+.coop-page #poop-form textarea,
+.coop-page #reminder input,
+.coop-page #door-form input{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.coop-page #poop-form label,
+.coop-page #reminder label{
+    margin-bottom: 3px;
+}
+
+.coop-page #log-poop-button{
+    padding: 1%;
+    margin: 5px auto;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(31,208,99);
+    color: white;
+    font-size: large;
+}
+.coop-page #steps-section{
+    width: 93%;
+    margin: 15px auto;
+    background-color: rgb(224,247,244);
+    padding: 1% 2%;
+    border-radius: 20px;
+}
+.coop-page #steps {
+    width: 93%;
+    background-color: rgb(224,247,244);
+    margin:0px 15px;
+    padding: 1% 2%;
+    border-radius: 20px;
+}
+
+.coop-page .coop-selection-section{
+    width: 93%;
+    margin: 10px auto 16px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 16px;
+    padding: 14px 18px;
+    box-shadow: -4px 0px 0px rgba(0, 87, 6, 0.94);
+}
+
+.coop-page .coop-title{
+    margin: 0 0 10px;
+}
+
+.coop-page .coop-selector{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.coop-page .coop-selector label{
+    font-weight: 600;
+    color: rgb(44, 44, 44);
+}
+
+.coop-page #coop-select{
+    min-width: 260px;
+    max-width: 100%;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 8px;
+    padding: 8px 10px;
+    background-color: white;
+}
+
+.coop-page .coop-form-section{
+    width: 93%;
+    margin: 15px auto;
+    padding: 1% 2%;
+    border-radius: 20px;
+}
+
+.coop-page .update-coop-section{
+    background-color: rgb(240, 249, 240);
+}
+
+.coop-page .add-coop-section{
+    background-color: rgb(255, 248, 225);
+}
+
+.coop-page .update-coop-form,
+.coop-page .add-coop-form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 8px;
+}
+
+.coop-page .update-coop-form label,
+.coop-page .add-coop-form label{
+    margin-top: 4px;
+    font-weight: 600;
+    color: rgb(44, 44, 44);
+}
+
+.coop-page .update-coop-form input,
+.coop-page .update-coop-form textarea,
+.coop-page .add-coop-form input,
+.coop-page .add-coop-form textarea,
+.coop-page .add-coop-form select{
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background-color: white;
+}
+
+.coop-page .update-coop-form textarea,
+.coop-page .add-coop-form textarea{
+    min-height: 90px;
+    resize: vertical;
+}
+button{
+    cursor: pointer;
+}
+
+.coop-page .update-coop-form button,
+.coop-page .add-coop-form button{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 12px;
+    margin-top: 4px;
+    cursor : pointer;
+}
+
+.coop-page .update-coop-form button[type="submit"],
+.coop-page .add-coop-form button[type="submit"]{
+    background-color: rgb(31,208,99);
+}
+
+.coop-page .update-coop-form button[type="button"]{
+    background-color: rgb(225, 72, 72);
+}
+
+.coop-page .update-coop-form button:hover,
+.coop-page .add-coop-form button:hover{
+    filter: brightness(0.95);
+}
+
+@media (max-width: 900px){
+    .coop-page #top{
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .coop-page #door,
+    .coop-page #reminder{
+        width: 100%;
+    }
+
+    .coop-page #coop-select{
+        width: 100%;
+        min-width: 0;
+    }
+}

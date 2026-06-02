@@ -1,0 +1,121 @@
+(----------------------------------)
+ECLYPSE MOSQUITTO - for meshtastic
+(----------------------------------)
+	
+	1.install Eclipse Mosquitto, will be used as a broker between meshtastic and node red
+	(This will be an external install, not from inside VS Code)
+	2.Edit environments: 	open Edit Environment Variables (through search)
+				click on Environemnt variables
+				Click on "path" on the bottom block
+				click "Edit"
+				add the path of where Mosquitto is installed, eg "C:\Program Files\Mosquitto"
+				click OK on everything (we are done with environment edits)
+	(run with the code "mosquito - v" in CMD)
+	(if there is an error like "Only one usage of each socket", then it means it is running already)
+	(can be set to always run [or not] in Services in the search bar)
+
+
+
+(----------------------------------)
+PYTHON
+(----------------------------------)
+
+common - (pip install) this will install libraries. add the library name at the end for the library you want
+
+to check if installed correctly - 2 methods to check
+(Python --version) or (py --version). one might cause a problem, use the other one to check.
+install python in the extension in VS Code (choose first one, it will install 3 other extension as well)
+
+1. in the terminal, enter code "py -3.14 -m venv venv" 
+	(second venv is name of folder)
+	[this will create a virtual "container" so that the libraries to not mix with other python programs]
+
+2. venv\Scripts\activate 
+	(may need temporary bypass, see below)
+	[activates the virtual environment so that libraries are only installed here, and only uses libraries installed there]
+	[if you see green at the start (example a green (venv) then its working)
+
+3. pip install (Library name) 
+	[example : pyserial - so that python can see ports]
+	{pip install numpy matplotlib pandas} - for python maths
+
+additional commands (to share libraries)
+
+4. pip feeze> requirements
+	(this creates a text file with all libraries called "requirements.txt")
+
+5. pip install -r requirements.txt
+	(this installs all libraries inside the "requirements.txt" file)
+
+for libraries installing -
+	select kernal
+
+
+
+(----------------------------------)
+NODE RED/PYTHON - temporary bypass
+(----------------------------------)
+
+Open a terminal in VS code and run following code, one line at time:
+
+1. Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+2. npm install -g --unsafe-perm node-red 
+(only required to be run once in order to install)
+
+3. node-red 
+(runs node red)
+
+4. paste the code given into a new browser. example: "link: http://127.0.0.1:1880/"
+
+we will need to install other packages to make use of MySQL
+1. click on more (3 lines)
+2. Select Manage Palette
+3. Go to the Install tab.
+4. In the search bar, type "node-red-node-mysql"
+5. install top one
+
+more permanent bypass: 
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+(----------------------------------)
+Connect to MYSQL using XAMPP
+(----------------------------------)
+
+click on "Shell on the right side"
+1.Run the following codes in the new terminal:
+	mysql -u root
+   	ALTER USER 'root'@'localhost' IDENTIFIED BY 'PSUMySQL';
+   	FLUSH PRIVILEGES;
+   	EXIT;
+
+2. go to phpMyAdmin folder in XAMPP (in my case C:\Users\USER-PC\Development\xampp\phpMyAdmin)
+
+3. open file config.inc.php
+
+4. change the following lines
+   $cfg['Servers'][$i]['user'] = 'root';
+   $cfg['Servers'][$i]['password'] = 'PSUMySql'; // change to the password of the database
+
+   $cfg['Servers'][$i]['controluser'] = 'pma';
+   $cfg['Servers'][$i]['controlpass'] = 'PSUMySql'; // change to the password of the database
+
+5. on XAMPP the Admin button should work. 
+(note, at this point you will only have a user called "root")
+(apaarently this should be a functional state, but to access more advances features you should make a "pms" user)
+
+to do so, do the following;
+(optional, apparently)
+
+6.Open MySQL
+
+7. run the following code:   
+	CREATE USER 'pma'@'localhost' IDENTIFIED BY 'PSUMySql'; //(change password to whatever. I keep it same for simplicity)
+   	GRANT ALL PRIVILEGES ON `phpmyadmin`.* TO 'pma'@'localhost';
+   	FLUSH PRIVILEGES;
+8. for the remaining error, just click "Find out why" and click something in the line of "Create".
+(it should automatically configure itself)
+
+
+
+
+
