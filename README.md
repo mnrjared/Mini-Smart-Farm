@@ -1,7 +1,7 @@
 
 # Mini Smart Farm
-
-A full-stack smart farm management system built as a collaboration between **Pennsylvania State University (PSU)** and **Belgium Campus ITVersity**. The platform provides real-time IoT monitoring, AI-powered detection, and farm management tools across five modules: Chicken Coop, Crop Farm, Power Generation, and Water Distribution, integration management
+- Original Repository: [ENGR-422-Project](https://github.com/VoidMeBro/ENGR-422-Project)
+- A full-stack smart farm management system built as a collaboration between **Pennsylvania State University (PSU)** and **Belgium Campus ITVersity**. The platform provides real-time IoT monitoring, AI-powered detection, and farm management tools across five modules: Chicken Coop, Crop Farm, Power Generation, and Water Distribution, integration management
 
 ---
 
